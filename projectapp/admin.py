@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Address, Apartment, City, Category, SellType
 
-# Register your models here.
+admin.site.register([Address, Apartment, City, Category, SellType])
