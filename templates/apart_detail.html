@@ -98,114 +98,66 @@
         <!-- Navbar End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid header bg-white p-0">
-            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-                <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Find A <span class="text-primary">Perfect Home</span> To Live With Your Family</h1>
-                    <p class="animated fadeIn mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet
-                        sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
-                </div>
-                <div class="col-md-6 animated fadeIn">
-                    <div class="owl-carousel header-carousel">
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="../static/img/carousel-1.jpg" alt="">
-                        </div>
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="../static/img/carousel-2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-
-
-        <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Search End -->
-
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5 px-5">
-            <div style="margin-top: auto" class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Property Agents</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                </div>
-                {% for i in agents %}
-                <div class="card mb-3" style="max-width: 1000px;">
-                  <div class="row g-3">
-                    <div class="col-md-4">
-                      <img width="300" height="400" src="{{i.photo.url}}" >
-                    </div>
-                      <br>
-                      <br>
-                      <br>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">{{i.firstname}} {{i.lastname}}</h5>
-                        <p class="card-text">
-                            email : {{i.email}} <br>
-                            phone : {{i.phone}} <br>
-                            work price : {{i.work_price}} <br>
-                            work time : {{i.work_time}} hours in day <br>
-                            experience : {{i.experience}} <br>
-                            count sold : {{i.count_sold}}
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {%endfor%}
-
-            </div>
-        </div>
-        <!-- Team End -->
-
-
-        <!-- Call to Action Start -->
+         <!-- Property List Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="bg-light rounded p-3">
-                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <img class="img-fluid rounded w-100" src="../static/img/call-to-action.jpg" alt="">
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="mb-4">
-                                    <h1 class="mb-3">Contact With Our Certified Agent</h1>
-                                    <p>Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.</p>
-                                </div>
-                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Make A Call</a>
-                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div style="text-decoration-color: #2aabd2">
+                <h4>category : {{data.category.name}} <br>
+                address : {{data.address.name}} <br>
+                sell_type : {{data.sell_type.name}} <br>
+                short_name : {{data.short_name}} <br>
+                description : {{data.description}} <br>
+                phone : {{data.phone}} <br>
+                square : {{data.square}} <br>
+                seller_phone : {{data.seller_phone}} <br>
+                seller_name : {{data.seller_name}} <br>
+                price : {{data.price}} <br>
+                rooms : {{data.rooms}} <br>
+                    count_bath : {{data.count_bath}} <br>
+                    floors : {{data.count_floor}} <br>
+                    bedrooms : {{count_bedrooms}} <br>
+                    build date : {{data.build_date}} <br>
+                    reconstruction date : {{data.reconstruct_date}} <br>
+                    views : {{data.views}} <br>
+                </h4>
+                <h2>
+                    Rasmlar
+                </h2>
+                    <img src="{{data.photo1.url}}">
+                    <br>
+                    <img src="{{data.photo2.url}}">
+                    <br>
+                    {% if data.photo3 %}
+                    <img src="{{data.photo3.url}}" alt="no other pics" >
+                    <br>
+                    {{ elif }}
+                    <img src="{{data.photo4.url}}" alt="no other pics">
+                    <br>
+                    {{elif}}
+                    <img src="{{data.photo5.url}}" alt="no other pics">
+                    <br>
+                    {{elif}}
+                    <img src="{{data.photo6.url}}" alt="no other pics">
+                    <br>
+                    {{elif}}
+                    <img src="{{data.photo7.url}}" alt="no other pics">
+                    <br>
+                    {{elif}}
+                    <img src="{{data.photo8.url}}" alt="no other pics">
+                    <br>
+                    {{elif}}
+                    <img src="{{data.photo9.url}}" alt="no other pics">
+                    <br>
+                    {{elif}}
+                    <img src="{{data.photo10.url}}" alt="no other pics">
+                    {{else}}
+                    <h3>Mulumotlar topilmadi</h3>
+                    {%endif%}
+            </div>
             </div>
         </div>
-        <!-- Call to Action End -->
-        
+
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">

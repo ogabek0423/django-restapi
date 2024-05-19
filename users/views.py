@@ -6,6 +6,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.http import HttpResponse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import UserLoginForm, UserRegisterForm, UserProblemForm
+from .models import Problems, Comments
 
 
 class ContactView(LoginRequiredMixin, View):
@@ -20,8 +21,8 @@ class ContactView(LoginRequiredMixin, View):
         problem = request.POST['subject']
         problem_t = request.POST['message']
 
-        a = Problems.objects.create(problem_name=problem_t, problem_description=problem,
-                                    firstname=first_name, email=email)
+        a = Problems.objects.create(firstname=first_name, problem_description=problem_t,
+                                    problem_name=problem, email=email)
         a.save()
         return redirect('thank')
 

@@ -72,3 +72,12 @@ class Error404View(View):
 class ThankYouView(View):
     def get(self, request):
         return render(request, 'thankyou.html')
+
+
+class DetailView(View):
+    def get(self, request, id):
+        data = Apartment.objects.get(id=id)
+        context = {
+            'data': data
+        }
+        return render(request, 'apart_detail.html', context)
