@@ -3,6 +3,8 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=30)
+    image = models.ImageField(upload_to='projectapp/category/')
+    views = models.IntegerField(default=0)
     update_time = models.DateTimeField(auto_now=True)
     create_time = models.DateTimeField(auto_now_add=True)
 
@@ -78,16 +80,16 @@ class Apartment(models.Model):
     build_date = models.DateField(auto_now=True)
     reconstruct_date = models.DateField(auto_now=True)
     views = models.IntegerField()
-    photo1 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo2 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo3 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo4 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo5 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo6 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo7 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo8 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo9 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
-    photo10 = models.ImageField(upload_to='media/apartment/photos/', null=True, blank=True)
+    photo1 = models.ImageField(upload_to='apartment/photos/')
+    photo2 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo3 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo4 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo5 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo6 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo7 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo8 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo9 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
+    photo10 = models.ImageField(upload_to='apartment/photos/', null=True, blank=True)
 
     def __str__(self):
         return self.short_name

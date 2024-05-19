@@ -15,10 +15,10 @@ class ContactView(LoginRequiredMixin, View):
         return render(request, 'contact.html', context)
 
     def post(self, request):
-        first_name = request.POST['first_name']
+        first_name = request.POST['name']
         email = request.POST['email']
-        problem = request.POST['problem']
-        problem_t = request.POST['problem_title']
+        problem = request.POST['subject']
+        problem_t = request.POST['message']
 
         a = Problems.objects.create(problem_name=problem_t, problem_description=problem,
                                     firstname=first_name, email=email)
@@ -28,10 +28,7 @@ class ContactView(LoginRequiredMixin, View):
 
 class TestimonialView(LoginRequiredMixin, View):
     def get(self, request):
-        # user = User.objects.filter(username__icontains=request.USER)
-        context = {'testimonial': Comments.objects.all(),
-                   # 'user': user
-        }
+        context = {'testimonial': Comments.objects.all()}
 
         return render(request, 'testimonial.html', context)
 
@@ -96,4 +93,8 @@ class MyProfileView(View):
                 'user': user,
             }
         return render(request, 'myprofile.html', context)
+
+
+
+
 

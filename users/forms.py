@@ -24,4 +24,4 @@ class UserLoginForm(forms.Form):
 class UserProblemForm(forms.Form):
     class Meta:
         model = Problems
-        fields = ['first_name', 'email', 'problem_name', 'problem_description']
+        fields = ['firstname', 'lastname', 'email', 'username', 'problem_name', 'problem_description']

@@ -21,9 +21,7 @@ class Comments(models.Model):
 
 class Problems(models.Model):
     firstname = models.CharField(max_length=30)
-    lastname = models.CharField(max_length=30)
     email = models.EmailField()
-    username = models.CharField(max_length=30)
     problem_name = models.CharField(max_length=30)
     problem_description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
@@ -34,7 +32,7 @@ class Problems(models.Model):
     class Meta:
         ordering = ['id', 'created_at']
         indexes = [
-            models.Index(fields=['id', 'username'])
+            models.Index(fields=['id', 'firstname'])
         ]
 
 
@@ -44,6 +42,7 @@ class Agents(models.Model):
     email = models.EmailField()
     username = models.CharField(max_length=30)
     password = models.CharField(max_length=30)
+    photo = models.ImageField(upload_to='users/agent/')
     phone = models.CharField(max_length=30)
     work_price = models.IntegerField()
     work_time = models.IntegerField()
@@ -51,6 +50,7 @@ class Agents(models.Model):
     count_sold = models.IntegerField()
     birthday = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
+    views = models.IntegerField(default=0)
 
     def __str__(self):
         return f'{self.username}'
@@ -60,3 +60,4 @@ class Agents(models.Model):
         indexes = [
             models.Index(fields=['id', 'firstname', 'lastname', 'username'])
         ]
+
