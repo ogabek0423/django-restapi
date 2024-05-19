@@ -5,9 +5,10 @@ from django.views import View
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout
 from users.forms import UserRegisterForm, UserLoginForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class AboutView(View):
+class AboutView(LoginRequiredMixin, View):
     def get(self, request):
         return render(request, 'about.html')
 
@@ -15,11 +16,6 @@ class AboutView(View):
 class AgentView(View):
     def get(self, request):
         return render(request, 'property-agent.html')
-
-
-class ContactView(View):
-    def get(self, request):
-        return render(request, 'contact.html')
 
 
 class PropertyListView(View):
@@ -30,16 +26,6 @@ class PropertyListView(View):
 class PropertyTypeView(View):
     def get(self, request):
         return render(request, 'property-type.html')
-
-#
-# class PropertyDetailView(View):
-#     def get(self, request, id):
-#         return render(request, 'property-detail')
-
-
-class TestEmoNialView(View):
-    def get(self, request):
-        return render(request, 'testimonial.html')
 
 
 class Error404View(View):

@@ -33,7 +33,7 @@ class TestimonialView(LoginRequiredMixin, View):
                    # 'user': user
         }
 
-        return render(request, 'users/testimonial.html', context)
+        return render(request, 'testimonial.html', context)
 
 
 class UserLoginView(View):
@@ -43,13 +43,13 @@ class UserLoginView(View):
         return render(request, 'users/login.html', context)
 
     def post(self, request):
-        username = request.POST["username"]
-        password = request.POST["password"]
+        username = request.POST['username']
+        password = request.POST['password']
         data = {
             "username": username,
             "password": password
         }
-        login_form = AuthenticationForm(data=request.POST)
+        login_form = AuthenticationForm(data=data)
 
         if login_form.is_valid():
             user = login_form.get_user()
@@ -95,5 +95,5 @@ class MyProfileView(View):
         context = {
                 'user': user,
             }
-        return render(request, 'users/my_profile.html', context)
+        return render(request, 'myprofile.html', context)
 
