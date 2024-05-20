@@ -35,8 +35,8 @@ class CategoryAdmin(ImportExportModelAdmin):
 
 @admin.register(SellType)
 class SellTypeAdmin(admin.ModelAdmin):
-    list_display = ['nane']
-    list_display_links = ['nane']
+    list_display = ['name']
+    list_display_links = ['name']
     search_fields = ['name']
 
 

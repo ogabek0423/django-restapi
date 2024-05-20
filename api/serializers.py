@@ -57,11 +57,11 @@ class ProblemsSerializer(serializers.ModelSerializer):
 class ApartmentSerializer(serializers.ModelSerializer):
     category = CategorySerializer(read_only=True)
     sell_type = SellTypeSerializer(read_only=True)
-    agents = AgentsSerializer(read_only=True)
     address = AddressSerializer(read_only=True)
 
     class Meta:
         model = Apartment
-        fields = ['seller_name', 'seller_phone', 'phone', 'work_price', 'work_time', 'experience',
-                  'count_sold', 'photo1', 'photo2', 'views', 'price']
+        fields = ['seller_name', 'seller_phone', 'phone', 'category', 'sell_type', 'address', 'count_bath',
+                  'photo1', 'photo2', 'views', 'price', 'count_bedrooms', 'build_date',
+                  'reconstruct_date', 'reconstruct_date']
 

@@ -13,9 +13,9 @@ class ProblemsAdmin(ImportExportModelAdmin):
 
 @admin.register(Agents)
 class AgentsAdmin(ImportExportModelAdmin):
-    list_display = ['firsrname', 'lastname', 'email', 'views']
-    list_display_links = ['firsrname', 'lastname', 'email', 'views']
-    search_fields = ['firsrname', 'lastname', 'email', 'views']
+    list_display = ['firstname', 'lastname', 'email', 'views']
+    list_display_links = ['firstname', 'lastname', 'email', 'views']
+    search_fields = ['firstname', 'lastname', 'email', 'views']
 
 
 @admin.register(Comments)
