@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'rest_framework',
     'drf_yasg',
+    'import_export'
 
 ]
 
