@@ -1,5 +1,17 @@
-create .env 
-create venv
-```python3.12 -m venv venv```
-pip installs
-``` pip install django drf-yasg pillow psycopg2 python-dotenv django-extensions django-rest-framework django-import-export```
+app ni dockerda ishlatish qo'llanma
+IMAGE NI TAYYORLASH
+```docker build --tag first:3.8 .```
+CONTAINER YARATISH 
+```docker-compose up --build```
+TEST QILIB KORISH 
+```http://localhost:8000/```
+AGAR ISHLAMASDAN XATOLIK QAYTARSA 
+DOCKER-COMPOSE FAYLIDAGI 18-QATORNI COMMENTDAN CHIQARIB (PYTHON MANAGE.PY MIGRATE) 
+QAYTA BUYRUQ BERING
+CONTAINERNI O'CHIRISH
+```docker-compose down```
+QAYTA YARATISH UCHUN
+```docker-compose up --build```
+DATABASEGA MALUMOTLARNI QO'SHISH UCHUN DJANGO ADMIN QISMIDAN FOYDALANING BUNING UCHUN DOCKER ILOVASIDA
+SHU CONTAINER WEB-1 ICHIDA EXEC QISMIDAN SUPERUSER YARATISH UCHUN BUYRUQ BERING
+```python manage.py createsuperuser```
