@@ -9,9 +9,12 @@ class UserRegisterForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'email', 'username', 'password']
 
     def save(self, commit=True):
-        user = super().save(commit)
-        user.set_password(self.cleaned_data['password'])
-        user.save()
+        user = super().save(commit=False)  # commit=False da saqlash, so'ngra o'zgartirish
+        user.first_name = self.cleaned_data['first_name']  # first_name ni qo'shish
+        user.last_name = self.cleaned_data['last_name']  # last_name ni qo'shish
+        user.set_password(self.cleaned_data['password'])  # parolni yangilash
+        if commit:
+            user.save()
         return user
 
 

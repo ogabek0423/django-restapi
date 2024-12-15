@@ -68,13 +68,13 @@ class UserRegisterView(View):
         context = {'form': form}
         return render(request, 'users/register.html', context)
 
-
     def post(self, request):
         create_form = UserRegisterForm(data=request.POST)
         if create_form.is_valid():
-            create_form.save()
+            user = create_form.save(commit=False)  # commit=False bilan saqlaymiz
+            user.set_password(create_form.cleaned_data['password'])  # parolni o'rnatamiz
+            user.save()  # foydalanuvchini saqlaymiz
             return redirect('login')
-
         else:
             context = {'form': create_form}
             return render(request, 'users/register.html', context)

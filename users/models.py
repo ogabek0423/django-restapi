@@ -61,3 +61,16 @@ class Agents(models.Model):
             models.Index(fields=['id', 'firstname', 'lastname', 'username'])
         ]
 
+
+class TelegramUser(models.Model):
+    chat_id = models.CharField(max_length=50, unique=True)
+    username = models.CharField(max_length=50, null=True, blank=True)
+    full_name = models.CharField(max_length=100, null=True, blank=True)
+
+    def __str__(self):
+        return self.full_name or self.username
+
+    class Meta:
+        indexes = [
+            models.Index(fields=['chat_id'])
+        ]
