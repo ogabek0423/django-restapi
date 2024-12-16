@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fc0be00-aded-44e4-b4d2-6b1dcd4da71c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/imtihon.7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/imtihon.7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property-agent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property-agent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ga7xBTEnh0p1w0R5XG48Sk9tY3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/django/imtihon.7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\django\imtihon.7" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\django\imtihon.7" />
+      <recent name="D:\django\imtihon.7\web" />
+      <recent name="D:\django\imtihon.7\media1" />
+      <recent name="D:\django\imtihon.7\templates\users" />
+      <recent name="D:\django\imtihon.7\templates" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fc0be00-aded-44e4-b4d2-6b1dcd4da71c" name="Changes" comment="" />
+      <created>1715924078188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715924078188</updated>
+      <workItem from="1715924079280" duration="5296000" />
+      <workItem from="1715955683519" duration="926000" />
+      <workItem from="1716011622536" duration="1000" />
+      <workItem from="1716085022723" duration="9249000" />
+      <workItem from="1716102319988" duration="49324000" />
+      <workItem from="1716212700040" duration="3715000" />
+      <workItem from="1716260012494" duration="37000" />
+      <workItem from="1716344466690" duration="418000" />
+      <workItem from="1716349643963" duration="2000" />
+      <workItem from="1716389911452" duration="31000" />
+      <workItem from="1716927019645" duration="36000" />
+      <workItem from="1717989944900" duration="4357000" />
+      <workItem from="1718116231286" duration="506000" />
+      <workItem from="1718205701376" duration="2539000" />
+      <workItem from="1718283546968" duration="3664000" />
+      <workItem from="1718287304908" duration="2750000" />
+      <workItem from="1718290163937" duration="488000" />
+      <workItem from="1718372867785" duration="3275000" />
+      <workItem from="1718530992005" duration="317000" />
+      <workItem from="1718592214918" duration="3116000" />
+      <workItem from="1718622443973" duration="1415000" />
+      <workItem from="1718630405563" duration="601000" />
+      <workItem from="1718640824279" duration="3369000" />
+      <workItem from="1718672461675" duration="2029000" />
+      <workItem from="1723909976692" duration="1287000" />
+      <workItem from="1726306848345" duration="635000" />
+      <workItem from="1726316177663" duration="605000" />
+      <workItem from="1727323052821" duration="98000" />
+      <workItem from="1733466991606" duration="400000" />
+      <workItem from="1733722587707" duration="685000" />
+      <workItem from="1734279188654" duration="3835000" />
+      <workItem from="1734290669495" duration="7816000" />
+      <workItem from="1734343811501" duration="5806000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
