@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B98E;
+    --primary: #0dcaf0;
     --secondary: #FF6922;
     --light: #EFFDF5;
     --dark: #0E2E50;
@@ -14,6 +14,27 @@
     z-index: 99;
 }
 
+.header {
+    background-color: #87CEEB; /* Orta moviy (Sky Blue) */
+}
+
+.header h1 span {
+    color: #1E90FF; /* Ko'k rangdagi matn */
+}
+
+.header p {
+    color: #333; /* Matnning qora-oq kombinatsiyasi */
+}
+
+.btn-primary {
+    background-color: #4682B4; /* Orta moviy tugma rangi */
+    border-color: #4682B4;
+}
+
+.btn-primary:hover {
+    background-color: #5A9BD5; /* Hover paytida rang */
+    border-color: #5A9BD5;
+}
 
 /*** Spinner ***/
 #spinner {
